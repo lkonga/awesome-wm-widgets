@@ -11,8 +11,8 @@
 local wibox = require("wibox")
 local watch = require("awful.widget.watch")
 
---local GET_BRIGHTNESS_CMD = "xbacklight -get"
-local GET_BRIGHTNESS_CMD = "light -G"
+local GET_BRIGHTNESS_CMD = "xbacklight -get"
+-- local GET_BRIGHTNESS_CMD = "light -G"
 local path_to_icons = "/usr/share/icons/Arc/status/symbolic/"
 
 local brightness_text = wibox.widget.textbox()
@@ -24,7 +24,8 @@ local brightness_icon = wibox.widget {
     	resize = false,
         widget = wibox.widget.imagebox,
     },
-    top = 3,
+    -- top = 3,
+    top = 9,
     widget = wibox.container.margin
 }
 
