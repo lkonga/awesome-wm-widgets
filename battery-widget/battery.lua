@@ -24,7 +24,7 @@ local battery_widget = wibox.widget {
     {
         id = "icon",
         widget = wibox.widget.imagebox,
-        resize = false
+        resize = true
     },
     layout = wibox.container.margin(_, 0, 0, 3)
 }
